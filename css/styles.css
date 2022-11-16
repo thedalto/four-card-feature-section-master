@@ -120,22 +120,26 @@ main {
 }
 
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 415px) {
   body{
-    padding: 5rem 0rem 5rem 0rem;
+    padding: 5rem 1rem ;
   }
 
   main{
     flex-direction: row;
-    display: contents;
-  }
+    display: grid;
 
-  header{
-    padding-bottom: 5rem;
+    padding: 3rem;
   }
 
   .card-description{
     margin-bottom: 2rem;
+  }
+
+  .card-title-cal, .card-title-sup{
+
+    margin-left: 15px;
+    margin-right: 15px;
   }
 
 }
