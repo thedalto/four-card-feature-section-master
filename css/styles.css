@@ -25,6 +25,7 @@ header {
 
 svg{
   float: right;
+
   margin-top: 2rem;
   margin-right: 0.25rem;
 }
@@ -72,7 +73,7 @@ main {
   padding: 1.5rem;
 }
 
-.card-title-sup, .card-title-tea, .card-title-kar, .card-title-cal {
+.card-title-sup, .card-title-tea, .card-title-kar, .card-title-cal { 
   font-size: 1.15rem;
   font-weight: 600;
 
@@ -91,7 +92,6 @@ main {
 
 .card-title-tea{
   border-top: 0.25rem solid hsl(0, 78%, 62%);
-  
 }
 
 .card-title-kar{
@@ -109,8 +109,7 @@ main {
 
   padding: 0.25rem 3rem 7rem 2rem;
   box-shadow: 0px 10px 5px -4px hsl(229, 6%, 66%);
-
-
+  
   color: hsl(229, 6%, 66%);
 }
 
@@ -120,7 +119,7 @@ main {
 }
 
 
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 750px) {
   body{
     padding: 5rem 1rem ;
   }
