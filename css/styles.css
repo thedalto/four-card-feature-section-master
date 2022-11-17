@@ -20,7 +20,6 @@ header {
   width: 100%;
 
   text-align: center;
-  align-items: center;
 }
 
 svg{
@@ -59,10 +58,11 @@ main {
   flex-direction: row;
   display: flex;
 
-  margin-left: 1rem;
-  padding: 3rem 1rem 1rem 3rem;
+  padding: 2rem 3rem 1rem 3rem;
 
+  justify-content: center;
   align-items: center;
+
 }
 
 .card-contander:nth-child(2) {
@@ -70,15 +70,17 @@ main {
 }
 
 .card-contender {
-  padding: 1.5rem;
+  padding: 5rem;
+
 }
 
 .card-title-sup, .card-title-tea, .card-title-kar, .card-title-cal { 
+  
   font-size: 1.15rem;
   font-weight: 600;
 
   padding-top: 1.75rem;
-  padding-left: 2rem;
+  padding-left: 3rem;
 
   border-radius: 0.25rem;
 
@@ -107,19 +109,19 @@ main {
   font-size: 0.725rem;
   font-weight: 400;
 
-  padding: 0.25rem 3rem 7rem 2rem;
+  padding: 0.5rem 3rem 7rem;
   box-shadow: 0px 10px 5px -4px hsl(229, 6%, 66%);
   
   color: hsl(229, 6%, 66%);
 }
 
 .card-column{
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding: 3rem 1rem;
 }
 
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 450px) {
+
   body{
     padding: 5rem 1rem ;
   }
@@ -129,17 +131,47 @@ main {
     display: grid;
 
     padding: 3rem;
+
+  }
+
+  .card-column{
+    padding: 0rem;
   }
 
   .card-description{
     margin-bottom: 2rem;
   }
 
-  .card-title-cal, .card-title-sup{
+  .card-title-cal, .card-title-sup, .card-column{
+    width: 280px;
 
-    margin-left: 15px;
-    margin-right: 15px;
+    margin: auto;
+    
   }
 
+}
+
+@media only screen and (max-width: 950px){
+
+  main{
+    flex-direction: column;
+    display: flex; 
+
+    align-items: stretch;
+
+    padding: 2rem 2rem 2rem 1rem;
+}
+
+  }
+
+.card-column{
+  padding: 0rem ;
+
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.card-title-kar{
+  margin-top: 2rem;
 }
   
