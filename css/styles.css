@@ -120,7 +120,7 @@ main {
 }
 
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 570px) {
 
   body{
     padding: 5rem 1rem ;
@@ -136,17 +136,14 @@ main {
 
   .card-column{
     padding: 0rem;
+
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+
   }
 
   .card-description{
-    margin-bottom: 2rem;
-  }
-
-  .card-title-cal, .card-title-sup, .card-column{
-    width: 280px;
-
-    margin: auto;
-    
+    margin-bottom: 0rem;
   }
 
 }
@@ -159,7 +156,7 @@ main {
 
     align-items: stretch;
 
-    padding: 2rem 2rem 2rem 1rem;
+    padding: 2rem ;
 }
 
   }
