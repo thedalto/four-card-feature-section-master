@@ -13,7 +13,7 @@ body {
 
   background-color: hsl(0, 0%, 98%);
 
-  padding: 4rem 10rem 0;
+  padding: 1rem 10rem 0;
 }
 
 header {
@@ -22,7 +22,7 @@ header {
   text-align: center;
 }
 
-svg{
+svg {
   float: right;
 
   margin-top: 2rem;
@@ -62,20 +62,20 @@ main {
 
   justify-content: center;
   align-items: center;
-
 }
 
 .card-contander:nth-child(2) {
   margin-top: 1.5rem;
 }
 
-.card-contender {
-  padding: 5rem;
-
+.card-container {
+  width: 18rem;
 }
 
-.card-title-sup, .card-title-tea, .card-title-kar, .card-title-cal { 
-  
+.card-title-sup,
+.card-title-tea,
+.card-title-kar,
+.card-title-cal {
   font-size: 1.15rem;
   font-weight: 600;
 
@@ -85,90 +85,94 @@ main {
   border-radius: 0.25rem;
 
   color: hsl(234, 12%, 34%);
-
 }
 
-.card-title-sup{
+.card-title-sup {
   border-top: 0.25rem solid hsl(180, 62%, 55%);
 }
 
-.card-title-tea{
+.card-title-tea {
   border-top: 0.25rem solid hsl(0, 78%, 62%);
 }
 
-.card-title-kar{
+.card-title-kar {
   border-top: 0.25rem solid hsl(34, 97%, 64%);
+
+  margin-top: 2rem;
 }
 
-.card-title-cal{
+.card-title-cal {
   border-top: 0.25rem solid hsl(212, 86%, 64%);
 }
-
 
 .card-description {
   font-size: 0.725rem;
   font-weight: 400;
 
   padding: 0.5rem 3rem 7rem;
-  box-shadow: 0px 10px 5px -4px hsl(229, 6%, 66%);
-  
+  box-shadow: 0 10px 5px -4px hsl(229, 6%, 66%);
+
   color: hsl(229, 6%, 66%);
 }
 
-.card-column{
-  padding: 3rem 1rem;
+.card-column {
+  padding: 2rem 1rem;
 }
 
+@media only screen and (max-width: 950px) {
+  main {
+    flex-direction: column;
+    display: flex;
 
-@media only screen and (max-width: 570px) {
+    align-items: stretch;
 
-  body{
-    padding: 5rem 1rem ;
+    padding: 2rem;
   }
 
-  main{
+  .card-container {
+    width: auto;
+  }
+
+  .card-column {
+    padding: 0;
+
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  .card-title-kar {
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  body {
+    padding: 5rem 1rem;
+  }
+
+  main {
     flex-direction: row;
     display: grid;
 
     padding: 3rem;
-
   }
 
-  .card-column{
-    padding: 0rem;
+  .card-column {
+    padding: 0;
 
-    margin-bottom: 0rem;
-    margin-top: 0rem;
-
+    margin-bottom: 0;
+    margin-top: 0;
   }
 
-  .card-description{
-    margin-bottom: 0rem;
+  .card-description {
+    margin-bottom: 0;
   }
 
-}
-
-@media only screen and (max-width: 950px){
-
-  main{
-    flex-direction: column;
-    display: flex; 
-
-    align-items: stretch;
-
-    padding: 2rem ;
-}
-
+  .card-title-cal {
+    margin-top: 2rem;
   }
 
-.card-column{
-  padding: 0rem ;
-
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  .card-title-tea {
+    margin-top: 2rem;
+  }
 }
-
-.card-title-kar{
-  margin-top: 2rem;
-}
-  
